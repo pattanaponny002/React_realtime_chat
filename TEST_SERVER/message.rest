@@ -7,8 +7,11 @@ Content-Type: application/json
     "text":"dd"
 }
 
-
+###
+GET http://localhost:4000/message/api
 ###
 GET http://localhost:4000/message/api/64635dc3568d75368144d4e1
+###
+GET https://test-code-deploying.vercel.app/message/api/64635dc3568d75368144d4e1
 ###
 DELETE  http://localhost:4000/message/api/

@@ -10,6 +10,9 @@ mongoose.connect("mongodb://localhost:27017/master", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
+router.get("/", async (req, res) => {
+  res.json({ hello: "test" });
+});
 router.post("/add", async (req, res) => {
   const { conversationId, senderId, text, photoURL } = req.body;
   console.log(
