@@ -1,12 +1,5 @@
-POST https://test-code-deploying.vercel.app/user/app
-Content-Type: application/json
+GET http://localhost:4001/home/api
 
-{   
-    "username":"dd",
-    "password":"asdaf",
-    "email":"hello",
-    "photoURL":""
-}
 ###
 DELETE  https://test-code-deploying.vercel.app/user/api
 
