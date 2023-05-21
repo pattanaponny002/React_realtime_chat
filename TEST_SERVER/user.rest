@@ -1,0 +1,72 @@
+GET  http://localhost:4000/
+Content-Type: application/json
+
+###
+
+POST http://localhost:4000/user/api/register
+Content-Type: application/json
+
+{   
+    "username":"dd",
+    "password":"asdaf",
+    "email":"hello",
+    "photoURL":""
+}
+
+###
+
+GET http://localhost:4000/user/api/checkExists/dd
+Content-Type: application/json
+
+###
+DELETE  http://localhost:4000/user/api
+Content-Type: application/json
+
+###
+GET  http://localhost:4000/user/api/find?username=1
+
+###
+GET http://localhost:4000/user/api/findId/64632b332a4567db15aa9b29
+
+###
+
+GET  http://localhost:4000/check?xx=33
+Content-Type: application/json
+
+
+###
+
+GET  http://localhost:4000/123456
+Content-Type: application/json
+
+###
+
+POST  http://localhost:4000/user/api/login
+Content-Type: application/json
+
+{
+    "username":"dd",
+    "password":"asdaf"
+}
+###
+
+GET  http://localhost:4000/user/api/welcome?username=dd
+Content-Type: application/json
+
+###
+
+GET  http://localhost:4000/user/api/content?username=dd
+Content-Type: application/json
+
+
+
+
+
+
+
+
+
+
+
+
+

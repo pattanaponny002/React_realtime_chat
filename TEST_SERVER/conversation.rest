@@ -1,0 +1,15 @@
+POST  http://localhost:4000/conversation/api/add
+Content-Type: application/json
+
+{
+    "senderID":"111",
+    "receiverID":"999"
+}
+
+###
+DELETE http://localhost:4000/conversation/api/delete
+
+### 
+GET  http://localhost:4000/conversation/api/64632b332a4567db15aa9b29
+Content-Type: application/json
+
