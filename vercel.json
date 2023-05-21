@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "user-api.js", "use": "@vercel/node" },
+    { "src": "conversation-api.js", "use": "@vercel/node" },
+    { "src": "message-api.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/user/api", "dest": "user-api.js" },
+    { "src": "/conversation/api", "dest": "conversation-api.js" },
+    { "src": "/message/api", "dest": "message-api.js" }
+  ]
+}
