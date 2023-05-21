@@ -1,0 +1,10 @@
+POST https://react-realtime-chat-4g8p.vercel.app/user/api/register
+Content-Type: application/json
+
+{   
+    "username":"dd",
+    "password":"asdaf",
+    "email":"hello",
+    "photoURL":""
+}
+
