@@ -1,4 +1,4 @@
-POST https://react-realtime-chat-4g8p.vercel.app/user/api/register
+POST https://test-code-deploying.vercel.app/user/app
 Content-Type: application/json
 
 {   
@@ -7,4 +7,7 @@ Content-Type: application/json
     "email":"hello",
     "photoURL":""
 }
+###
+DELETE  https://test-code-deploying.vercel.app/user/api
+
 
