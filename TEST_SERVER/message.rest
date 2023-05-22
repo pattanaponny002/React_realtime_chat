@@ -1,17 +1,13 @@
-POST  http://localhost:4000/message/api/add
+POST  http://localhost:4001/message/api/add
 Content-Type: application/json
 
 {
-    "conversationId":"111",
-    "senderId":"111",
-    "text":"dd"
+    "conversationId":"777",
+    "senderId":"777",
+    "text":"xxx"
 }
 
 ###
-GET http://localhost:4000/message/api
-###
-GET http://localhost:4000/message/api/64635dc3568d75368144d4e1
-###
-GET https://test-code-deploying.vercel.app/message/api/64635dc3568d75368144d4e1
+GET https://test-code-deploying-2t6tbw26z-pattanaponny002.vercel.app/message/api
 ###
 DELETE  http://localhost:4000/message/api/

@@ -6,8 +6,10 @@ const Conversations = require("../models/Conversations");
 const bcryptjs = require("bcryptjs");
 
 const jwt = require("jsonwebtoken");
+const MONGODB_URI =
+  "mongodb+srv://oloponnyolo:Ponza1234@cluster0.ltpa8rx.mongodb.net/?retryWrites=true&w=majority/master";
 
-mongoose.connect("mongodb://localhost:27017/master", {
+mongoose.connect(MONGODB_URI || process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });

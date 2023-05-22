@@ -17,13 +17,16 @@ const conversation_api = require("./routers/conversation");
 const message_api = require("./routers/message");
 const parser = require("socket.io-msgpack-parser");
 const port = 4000;
+const MONGODB_URI =
+  "mongodb+srv://oloponnyolo:Ponza1234@cluster0.ltpa8rx.mongodb.net/?retryWrites=true&w=majority/master";
+
 dotenv.config();
 mongoose
-  .connect("mongodb://localhost:27017/master", {
+  .connect(MONGODB_URI || process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
-  .then(() => console.log("conntected DB"));
+  .then(() => console.log("conntected DB ", process.env.MONGODB_URI));
 let users = [];
 
 function addUSer(userId, socketId) {
@@ -84,4 +87,7 @@ app.use("/conversation/api", conversation_api);
 app.use("/message/api", message_api);
 
 ///server for socket.io
-server.listen(port, console.log("Server is running on port ", port));
+server.listen(
+  process.env.PORT || 4001,
+  console.log("Server is running on port ", process.env.PORT || 4000)
+);
